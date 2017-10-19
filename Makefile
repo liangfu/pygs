@@ -12,27 +12,27 @@ DEL_FILE_RECURSIVE = $(DEL_FILE) -r
 
 libqxt-development :
 	-$(MKDIR) libqxt/src/core
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/core/qxtglobal.h -O libqxt/src/core/qxtglobal.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/core/qxtglobal.cpp -O libqxt/src/core/qxtglobal.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/core/qxtglobal.h -O libqxt/src/core/qxtglobal.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/core/qxtglobal.cpp -O libqxt/src/core/qxtglobal.cpp
 	-$(MKDIR) libqxt/src/gui
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut.cpp -O libqxt/src/gui/qxtglobalshortcut.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut.h -O libqxt/src/gui/qxtglobalshortcut.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_p.h -O libqxt/src/gui/qxtglobalshortcut_p.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_mac.cpp -O libqxt/src/gui/qxtglobalshortcut_mac.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_win.cpp -O libqxt/src/gui/qxtglobalshortcut_win.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_x11.cpp -O libqxt/src/gui/qxtglobalshortcut_x11.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut.cpp -O libqxt/src/gui/qxtglobalshortcut.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut.h -O libqxt/src/gui/qxtglobalshortcut.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut_p.h -O libqxt/src/gui/qxtglobalshortcut_p.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/mac/qxtglobalshortcut_mac.cpp -O libqxt/src/gui/qxtglobalshortcut_mac.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/win/qxtglobalshortcut_win.cpp -O libqxt/src/gui/qxtglobalshortcut_win.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/x11/qxtglobalshortcut_x11.cpp -O libqxt/src/gui/qxtglobalshortcut_x11.cpp
 
 libqxt-stable :
 	-$(MKDIR) libqxt/src/core
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/core/qxtglobal.h -O libqxt/src/core/qxtglobal.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/core/qxtglobal.cpp -O libqxt/src/core/qxtglobal.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/core/qxtglobal.h -O libqxt/src/core/qxtglobal.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/core/qxtglobal.cpp -O libqxt/src/core/qxtglobal.cpp
 	-$(MKDIR) libqxt/src/gui
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut.cpp -O libqxt/src/gui/qxtglobalshortcut.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut.h -O libqxt/src/gui/qxtglobalshortcut.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_p.h -O libqxt/src/gui/qxtglobalshortcut_p.h
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_mac.cpp -O libqxt/src/gui/qxtglobalshortcut_mac.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_win.cpp -O libqxt/src/gui/qxtglobalshortcut_win.cpp
-	wget http://dev.libqxt.org/libqxt/raw/tip/src/gui/qxtglobalshortcut_x11.cpp -O libqxt/src/gui/qxtglobalshortcut_x11.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut.cpp -O libqxt/src/gui/qxtglobalshortcut.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut.h -O libqxt/src/gui/qxtglobalshortcut.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/qxtglobalshortcut_p.h -O libqxt/src/gui/qxtglobalshortcut_p.h
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/mac/qxtglobalshortcut_mac.cpp -O libqxt/src/gui/qxtglobalshortcut_mac.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/win/qxtglobalshortcut_win.cpp -O libqxt/src/gui/qxtglobalshortcut_win.cpp
+	wget --no-check-certificate https://bitbucket.org/libqxt/libqxt/raw/master/src/widgets/x11/qxtglobalshortcut_x11.cpp -O libqxt/src/gui/qxtglobalshortcut_x11.cpp
 
 development :	libqxt-development build
 
